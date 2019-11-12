@@ -1,15 +1,13 @@
 <?xml version="1.0"?>
 <launch>
-
     <arg name="dev" default="/dev/ttyUSB0"/>
     <arg name="baud" default="115200"/>
     <arg name="address" default="128"/>
-    <arg name="max_abs_linear_speed" default="1.5"/>
+    <arg name="max_abs_linear_speed" default="2.5"/>
     <arg name="max_abs_angular_speed" default="1.5"/>
 <!-- Wheels max acceleration m/s^2 (TODO: split in angular and linear acceleration) -->
     <arg name="acc_lim" default="1.0"/>
-<!-- 1957 ticks/rev ; 0.2 cm diam ; 0.6283186 m/rev -->
-    <arg name="ticks_per_meter" default="3114.66"/>
+    <arg name="ticks_per_meter" default="4488"/>
     <arg name="base_width" default="0.71"/>
     <arg name="run_diag" default="true"/>
 
@@ -22,7 +20,6 @@
 	<param name="~acc_lim" value="$(arg acc_lim)"/>
         <param name="~ticks_per_meter" value="$(arg ticks_per_meter)"/>
         <param name="~base_width" value="$(arg base_width)"/>
-          <remap from="odom" to="odom_wheeled" />
     </node>
 
 
