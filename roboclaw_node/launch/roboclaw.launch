@@ -18,11 +18,11 @@
         <param name="~baud" value="$(arg baud)"/>
         <param name="~address" value="$(arg address)"/>
         <param name="~max_abs_linear_speed" value="$(arg max_abs_linear_speed)"/>
-	<param name="~max_abs_angular_speed" value="$(arg max_abs_angular_speed)"/>
-	<param name="~acc_lim" value="$(arg acc_lim)"/>
+	    <param name="~max_abs_angular_speed" value="$(arg max_abs_angular_speed)"/>
+	    <param name="~acc_lim" value="$(arg acc_lim)"/>
         <param name="~ticks_per_meter" value="$(arg ticks_per_meter)"/>
         <param name="~base_width" value="$(arg base_width)"/>
-          <remap from="odom" to="odom_wheeled" />
+        <remap from="odom" to="odom_wheeled" />
     </node>
 
 

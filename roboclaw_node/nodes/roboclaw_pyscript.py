@@ -3,7 +3,7 @@ from math import pi, cos, sin, copysign
 
 import diagnostic_msgs
 import diagnostic_updater
-import roboclaw_driver.roboclaw_driver as roboclaw
+import roboclaw_driver as roboclaw
 import rospy
 import tf
 from roboclaw_node.msg import Motors_currents, Wheels_speeds
